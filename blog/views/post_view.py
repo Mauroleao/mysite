@@ -3,4 +3,4 @@ from django.views import generic
 
 class PostView(generic.View):
     def get(self, request):
-        return HttpResponse("Bem vindo a pagina Home")
+        return HttpResponse("Hello World!")
