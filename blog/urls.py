@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import PostView, ExercicioView
+from blog import views
 
 urlpatterns = [
-    path('home/', PostView.as_view(), name='home'),
-    path('exercicio/', ExercicioView.as_view(), name='exercicio'),
+    path('home/', views.PostView.as_view(), name='home'),
+    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
 ]

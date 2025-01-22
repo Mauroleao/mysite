@@ -1,3 +1,3 @@
 from .post_view import PostView
-from .exercicio_view import ExercicioView
+from .post_view import PostDetail
 
